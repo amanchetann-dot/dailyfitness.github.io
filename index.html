@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Fitness | Workout, Diet & Recovery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('images/hero-fit.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 1rem;
+    }
+    .hero-content {
+      background: rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #28a745;   /* green color for fitness */
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .feature {
+      flex: 1 1 280px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .feature img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .video-item {
+      flex: 1 1 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .video-item iframe {
+      width: 10 excited;
+      height: 220px;
+      border: 0;
+    }
+    .diet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      text-align: center;
+    }
+    .diet-item {
+      flex: 1 1 300px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .recovery {
+      background: #000;
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .recovery h2 {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .about-text {
+      flex: 1 1 500px;
+    }
+    .about img {
+      flex: 1 1 300px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .cta {
+      background: #000;
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    footer {
+      background: #000;
+      color: #aaa;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .ad-banner {
+      text-align: center;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #f9f9f9;
+      border: 1px dashed #ccc;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- AdSense banner -->
+  <!--
+  <script async src="..."></script>
+  <ins class="adsbygoogle" ...></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  -->
+  <div class="ad-banner">Ad banner space (Google AdSense or other ads)</div>
+
+  <header>
+    <div class="container">
+      <h1>Daily Fitness</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#workouts">Workouts</a>
+        <a href="#diet">Diet</a>
+        <a href="#recovery">Recovery</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Daily Fitness: Workout, Diet & Recovery</h2>
+      <p>
+        Unlock your best body and overall fitness with structured workouts, healthy diet tips, and proper recovery from Aman Chetan Nath, Bhubaneswar.
+      </p>
+      <a href="#workouts" class="btn">Watch Workouts</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="ad-banner">In‑content ad unit space</div>
+
+    <!-- WORKOUTS -->
+    <section id="workouts">
+      <h2>Workouts That Work</h2>
+      <p>
+        Short, effective workouts for building strength, burning fat, and improving overall fitness—no fancy equipment needed.
+      </p>
+      <div class="videos">
+        <div class="video-item">
+          <iframe
+            src="https://www.youtube.com/embed/UdLKXPswgnY"
+            title="Full Body Home Workout"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-item">
+          <iframe
+            src="https://www.youtube.com/embed/xQgmykEsTOQ"
+            title="Upper Body Strength"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-item">
+          <iframe
+            src="https://www.youtube.com/embed/1fbU_MkV7NE"
+            title="Core & Abs Workout"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIET -->
+    <section id="diet">
+      <h2>Simple Diet Tips for Fitness</h2>
+      <p>
+        Eat better, recover faster, and feel stronger without complicated plans. Focus on real food, balanced portions, and consistency.
+      </p>
+      <div class="diet">
+        <div class="diet-item">
+          <h3>Pre‑Workout Fuel</h3>
+          <p>
+            Eat something light with carbs and a little protein 1–2 hours before training: fruit + nuts, banana + peanut butter, etc.
+          </p>
+        </div>
+        <div class="diet-item">
+          <h3>Post‑Workout Recovery</h3>
+          <p>
+            Within 30–60 minutes add protein + carbs: eggs, curd, chicken, paneer, or a simple protein shake with rice or roti.
+          </p>
+        </div>
+        <div class="diet-item">
+          <h3>General Daily Diet</h3>
+          <p>
+            Mix vegetables, whole grains, protein, and healthy fats in your meals. Drink enough water and limit junk food.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOVERY -->
+    <section id="recovery">
+      <h2>Recovery: Rest & Repair</h2>
+      <p>
+        Recovery is where your body grows stronger. Good sleep, rest days, stretching, and managing stress are as important as the workout.
+      </p>
+      <p>
+        Aim for 7–8 hours of sleep, 6–7 hours of light movement or walking, and at least 1–2 full rest days per week.
+      </p>
+    </section>
+
+    <!-- ABOUT OVERALL FITNESS -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Me & Overall Fitness</h2>
+        <p>
+          Hi, I'm Aman Chetan Nath from Bhubaneswar, Odisha. I help people build strong, healthy bodies using simple, effective workouts, smart diet choices, and proper recovery.
+        </p>
+        <p>
+          At <strong>Daily Fitness</strong>, the focus is on <strong>overall fitness</strong>—not just looking fit, but feeling strong, healthy, and ready for daily life.
+        </p>
+      </div>
+      <img src="images/about-aman.jpg" alt="Aman Chetan Nath" />
+    </section>
+
+    <section id="contact">
+      <h2>Stay Connected</h2>
+      <p>
+        For daily workouts, diet tips, and recovery advice, follow me on social media or join my mailing list.
+      </p>
+      <p>
+        You can also email me at: <a href="mailto:amanchetan@example.com">amanchetan@example.com</a>
+      </p>
+    </section>
+  </div>
+
+  <section class="cta">
+    <h2>Start Your Daily Fitness Journey</h2>
+    <p>Click below and choose your first workout, then add simple diet and recovery habits for real results.</p>
+    <a href="#workouts" class="btn">Watch Workouts</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Daily Fitness | Workout, Diet & Recovery | Bhubaneswar, Odisha
+  </footer>
+
+  <div class="ad-banner">Footer ad unit space</div>
+
+</body>
+</html>
